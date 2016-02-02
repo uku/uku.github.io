@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head xmlns:wb="http://open.weibo.com/wb">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unblock Youku 官方主頁</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid" id="wrapper">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="photo-header" class="text-center">
+                <div id="photo">
+                    <img src="img/icon.png" alt="avatar">
+                </div>
+                <div id="text-header">
+                    <h1>Unblock Youku</h1>
+                </div>
+                <div id="i18n-links">
+                    <a href="index_zhs.html">[中文简体]</a>
+                    <a href="index_zht.html">[中文繁體]</a>
+                    <a href="index.html">[English Version]</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row header">
+        <div class="col-xs-12 box text-justify">
+            <h2>
+                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                感謝您四年以來對 Unblock Youku 的支持與喜愛
+            </h2>
+            <p>你知道嗎？Unblock Youku 一直以來都是個<a href="https://github.com/Unblocker/Unblock-Youku" target="_blank">開源免費的個人項目</a>。雖然是我在四年前因為自己的興趣愛好在課余時間寫出來的，但是經過大家的口口相傳，Unblock Youku 現在已經擁有<a href="https://chrome.google.com/webstore/detail/unblock-youku/pdnfnkhpgegpcingjbfihlkjeighnddk/" target="_blank">超過 300 萬的活躍用戶</a>。這 300 萬用戶則變成了我的責任和前進的動力。我肩負著大家的信任和鼓勵，盡力在學習和工作之余提升 Unblock Youku 的服務品質。</p>
+            <p>但是從 2015 年下半年開始，Unblock Youku 的服務器多次遭到來源不明的大流量攻擊，導致服務器癱瘓。<abbr title="UnblockCN -- 詳情請見 http://uku.im/unblockcn">並且在同一時間，有流氓軟件在網上惡意傳播 Unblock Youku 已經改名的謠言</abbr>。在奮力抵抗攻擊和謠言的同時，我也深深地感到個人力量的有限，覺得只有尋求更多的幫助才能讓 Unblock Youku 長久穩定和免費地運行下去。</p>
+            <ul>
+                <li>希望更多的程序員朋友能參與我們開源項目的開發和維護，為 300 萬用戶提供更及時和穩定的服務；</li>
+                <li>歡迎大家捐助 Unblock Youku 服務器的運行費用，會有更多的服務器來抵抗大流量攻擊；</li>
+                <li>希望大家多幫 Unblock Youku 宣傳和辟謠，不讓更多的用戶上當受騙。</li>
+            </ul>
+            <p>
+                衷心地感謝。
+            </p>
+            <p>
+                - zhuzhuor 於 2016 年 1 月 31 日
+            </p>
+        </div>
+    </div>
+
+    <div class="row header">
+        <div class="col-xs-12 box">
+            <h2>
+                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                每捐助 2 美元即可幫助 Unblock Youku 服務器多運行 1 小時
+            </h2>
+        </div>
+        <div class="col-xs-12 box" id="donation">
+            方式：
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default active">
+                    <input type="radio" name="options" id="select-paypal" checked> PayPal 或信用卡
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="options" id="select-alipay"> 支付寶
+                </label>
+            </div>
+            <div>
+                <div id="paypal">
+                    <div class="donation-form">
+                        貨幣：
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input type="radio" name="options" id="select-usd" checked> USD
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="select-cad"> CAD
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="select-twd"> 新臺幣
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="select-hkd"> 港幣
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="donation-form">
+                        金額：
+                        <label class="radio-inline">
+                            <input type="radio" name="amount-options" id="amount-2" value="2" checked> <span id="amount-2-text">$2</span>
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="amount-options" id="amount-5" value="5"> <span id="amount-5-text">$5</span>
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="amount-options" id="amount-10" value="10"> <span id="amount-10-text">$10</span>
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="amount-options" id="amount-custom" value="custom"> 自選金額
+                        </label>
+                        <input type="number" id="custom-amount-input" value="20">
+                    </div>
+                    <div class="text-center donation-form">
+                        <button class="btn btn-lg btn-primary" id="paypal-donation-button" data-loading-text="請等待...">點此進行捐款</button>
+                        <div class="text-small"><small>無需註冊 PayPal 即可用信用卡捐款</small></div>
+                    </div>
+
+                    <div id="paypal-hidden-div">
+                        <form id="paypal-hidden-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="donate-unblock-youku@zhuzhu.org">
+                            <input type="hidden" name="item_name" value="Unblock Youku">
+                            <input type="hidden" name="currency_code" id="hidden-form-currency" value="USD">
+                            <input type="hidden" name="amount" id="hidden-form-amount" value="2">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="text-center" id="alipay">
+                    <p>請用支付寶手機軟件掃描下方的 QR 碼捐款</p>
+                    <img src="img/alipay.png" alt="Alipay QR code">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row header">
+        <div class="col-xs-12 box">
+            <h2><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                請關註 Unblock Youku 社交網絡帳號以獲取官方最新消息</h2>
+        </div>
+
+        <div class="col-xs-12 box social-network">
+            <div class="fb-like" data-href="https://www.facebook.com/uku.im/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+        </div>
+
+        <div class="col-xs-12 box social-network">
+            <a href="https://twitter.com/Unblock_Youku" class="twitter-follow-button" data-show-count="true" data-dnt="true">@Unblock_Youku</a>
+        </div>
+
+        <div class="col-xs-12 box social-network" id="weibo-div">
+            <wb:follow-button uid="5666348267" type="gray_3" width="100%" height="24" ></wb:follow-button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-center box" id="footer">
+    <p><a href="https://www.uku.im">https://www.uku.im</a></p>
+    <p>&copy; 2016</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1456856884526437";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<script data-url="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-30726750-13', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>

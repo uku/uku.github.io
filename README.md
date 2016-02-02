@@ -1,2 +1,1 @@
-# unblocker.github.io
-Official Unblock Youku Website
+Please visit the official website of Unblock-Youku at https://www.uku.im

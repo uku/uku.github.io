@@ -120,6 +120,7 @@ div.english-form-padding {
 .social-network {
     padding-left: 2em;
     padding-right: 2em;
+    overflow: hidden;
 }
 
 #weibo-div {

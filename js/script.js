@@ -67,6 +67,8 @@ $(document).ready(function() {
         $('#hidden-form-amount').val(get_selected_amount());
 
         $('#paypal-hidden-form').submit();
+
+        ga('send', 'event', 'Donation', 'PayPal Submit');
     });
 
     // Learnt from http://mo2g.com/view/102/

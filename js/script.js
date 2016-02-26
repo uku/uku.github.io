@@ -59,12 +59,23 @@ $(document).ready(function() {
         $("#amount-custom").prop("checked", true)
     });
 
+    // PayPal monthly
+    $('#input-monthly').change(function() {
+        if ($('#input-monthly').is(':checked')) {
+            $('#hidden-form-command').val('_xclick-subscriptions');
+        } else {
+            $('#hidden-form-command').val('_xclick');
+        }
+    });
+
     // Donation button
     $('#paypal-donation-button').click(function(event) {
         event.preventDefault();
         $(this).button('loading');
 
-        $('#hidden-form-amount').val(get_selected_amount());
+        var donation_amount = get_selected_amount();
+        $('#hidden-form-amount').val(donation_amount);
+        $('#hidden-form-monthly-amount').val(donation_amount);
 
         $('#paypal-hidden-form').submit();
 

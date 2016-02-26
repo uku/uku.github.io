@@ -111,6 +111,12 @@ div.donation-form {
     margin-top: 10px;
 }
 
+div#monthly {
+    margin-top: 0;
+    margin-botton: 0;
+    display: inline;
+}
+
 div.english-form-padding {
     padding-left: 1em;
     padding-right: 1em;

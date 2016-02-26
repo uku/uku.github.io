@@ -68,7 +68,7 @@
                 <div class="col-xs-11">
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default active">
-                            <input type="radio" name="options" id="select-paypal" checked> PayPal or Credit Card
+                            <input type="radio" name="options" id="select-paypal" checked> Credit Card or PayPal
                         </label>
                         <label class="btn btn-default">
                             <input type="radio" name="options" id="select-alipay"> Alipay
@@ -124,18 +124,35 @@
                             </div>
                         </div>
                     </div>
+                    <div class="donation-form">
+                        <div class="row english-form-padding">
+                            <div class="col-xs-1 text-right">
+                                Monthly:
+                            </div>
+                            <div class="col-xs-11">
+                                <div class="checkbox" id="monthly">
+                                    <label>
+                                        <input type="checkbox" id="input-monthly"> Make this payment a monthly contribution (you can cancel anytime).
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="text-center donation-form">
                         <button class="btn btn-lg btn-success" id="paypal-donation-button" data-loading-text="Please wait...">Click here to donate</button>
-                        <div class="text-small"><small>You can donate by credit cards without a PayPal account.</small></div>
+                        <div><small>You can donate by credit cards directly, without a PayPal account.</small></div>
                     </div>
 
                     <div id="paypal-hidden-div">
                         <form id="paypal-hidden-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="cmd" id="hidden-form-command" value="_xclick">
                             <input type="hidden" name="business" value="uku-im@zhuzhu.org">
                             <input type="hidden" name="item_name" value="Unblock Youku">
                             <input type="hidden" name="currency_code" id="hidden-form-currency" value="USD">
                             <input type="hidden" name="amount" id="hidden-form-amount" value="2">
+                            <input type="hidden" name="a3" id="hidden-form-monthly-amount" value="2">
+                            <input type="hidden" name="p3" value="1">
+                            <input type="hidden" name="t3" value="M">
                         </form>
                     </div>
                 </div>

@@ -96,6 +96,10 @@ div#donation {
 
 div#alipay {
     margin-top: 10px;
+    /*display: none;*/
+}
+
+div#paypal {
     display: none;
 }
 

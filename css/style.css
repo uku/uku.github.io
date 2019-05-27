@@ -94,15 +94,6 @@ div#donation {
     margin-right: 1em;
 }
 
-div#alipay {
-    margin-top: 10px;
-    /*display: none;*/
-}
-
-div#paypal {
-    display: none;
-}
-
 div#paypal-hidden-div {
     display: none;
 }

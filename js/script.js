@@ -18,17 +18,6 @@ function get_selected_amount() {
 }
 
 $(document).ready(function() {
-    // Payment div switch
-    $('#select-paypal').change(function() {
-        $('#alipay').hide();
-        $('#paypal').show();
-    });
-
-    $('#select-alipay').change(function() {
-        $('#paypal').hide();
-        $('#alipay').show();
-    });
-
     // Select currency
     $('#select-usd').change(function() {
         $('#hidden-form-currency').val('USD');

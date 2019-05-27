@@ -59,16 +59,17 @@
             </h2>
         </div>
         <div class="col-xs-12 box" id="donation">
-            方式：
-            <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default active">
-                    <input type="radio" name="options" id="select-alipay" checked> 支付寶
-                </label>
-                <label class="btn btn-default">
-                    <input type="radio" name="options" id="select-paypal">PayPal 或信用卡
-                </label>
-            </div>
             <div>
+                <h4>捐助方式 1：支付寶</h4>
+                <hr>
+                <div class="text-center" id="alipay">
+                    <p>請用支付寶手機軟件掃描下方的 QR 碼捐款</p>
+                    <img src="img/alipay.png" alt="Alipay QR code">
+                </div>
+
+                <hr>
+                <h4>捐助方式 2：PayPal 或 信用卡</h4>
+                <hr>
                 <div id="paypal">
                     <div class="donation-form">
                         貨幣：
@@ -132,11 +133,6 @@
                             <input type="hidden" name="no_shipping" value="1">
                         </form>
                     </div>
-                </div>
-
-                <div class="text-center" id="alipay">
-                    <p>請用支付寶手機軟件掃描下方的 QR 碼捐款</p>
-                    <img src="img/alipay.png" alt="Alipay QR code">
                 </div>
             </div>
         </div>

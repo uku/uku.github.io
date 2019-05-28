@@ -59,16 +59,17 @@
             </h2>
         </div>
         <div class="col-xs-12 box" id="donation">
-            方式：
-            <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default active">
-                    <input type="radio" name="options" id="select-alipay" checked> 支付宝
-                </label>
-                <label class="btn btn-default">
-                    <input type="radio" name="options" id="select-paypal"> PayPal 或信用卡
-                </label>
-            </div>
             <div>
+                <h4>捐助方式 1：支付宝</h4>
+                <hr>
+                <div class="text-center" id="alipay">
+                    <p>请用支付宝手机软件扫描下方的 QR 码捐款</p>
+                    <img src="img/alipay.png" alt="Alipay QR code">
+                </div>
+
+                <hr>
+                <h4>捐助方式 2：PayPal 或 信用卡</h4>
+                <hr>
                 <div id="paypal">
                     <div class="donation-form">
                         货币：
@@ -90,27 +91,27 @@
 
                     <div class="donation-form">
                         金额：
-                        <label class="radio-inline">
-                            <input type="radio" name="amount-options" id="amount-2" value="2" checked> <span id="amount-2-text">$2</span>
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="amount-options" id="amount-5" value="5"> <span id="amount-5-text">$5</span>
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="amount-options" id="amount-10" value="10"> <span id="amount-10-text">$10</span>
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="amount-options" id="amount-custom" value="custom"> 自选金额
-                        </label>
-                        <input type="number" id="custom-amount-input" value="20">
+                            <label class="radio-inline">
+                                <input type="radio" name="amount-options" id="amount-2" value="2" checked> <span id="amount-2-text">$2</span>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="amount-options" id="amount-5" value="5"> <span id="amount-5-text">$5</span>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="amount-options" id="amount-10" value="10"> <span id="amount-10-text">$10</span>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="amount-options" id="amount-custom" value="custom"> 自选金额
+                            </label>
+                            <input type="number" id="custom-amount-input" value="20">
                     </div>
                     <div class="donation-form">
                         月捐：
-                        <div class="checkbox" id="monthly">
-                            <label>
-                                <input type="checkbox" id="input-monthly"> 每月自动捐助（您可以随时取消）
-                            </label>
-                        </div>
+                            <div class="checkbox" id="monthly">
+                                <label>
+                                    <input type="checkbox" id="input-monthly"> 每月自动捐助（您可以随时取消）
+                                </label>
+                            </div>
                     </div>
                     <div class="donation-form text-center">
                         <button class="btn btn-lg btn-success" id="paypal-donation-button" data-loading-text="请等待...">点此进行捐款</button>
@@ -132,11 +133,6 @@
                             <input type="hidden" name="no_shipping" value="1">
                         </form>
                     </div>
-                </div>
-
-                <div class="text-center" id="alipay">
-                    <p>请用支付宝手机软件扫描下方的 QR 码捐款</p>
-                    <img src="img/alipay.png" alt="Alipay QR code">
                 </div>
             </div>
         </div>
